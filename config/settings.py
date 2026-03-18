@@ -1,4 +1,3 @@
-from email.policy import default
 from os.path import defpath
 from pathlib import Path
 import environ
@@ -38,6 +37,8 @@ INSTALLED_APPS = [
     'idempotency'
 
 ]
+
+AUTH_USER_MODEL = 'accounts.CustomUser'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

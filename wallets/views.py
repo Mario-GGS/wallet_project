@@ -3,7 +3,7 @@ from rest_framework.views import APIView
 from rest_framework.permissions import IsAuthenticated
 
 from .serializers import WalletSerializer, WalletBalanceSerializer
-from .handler import (
+from .handlers import (
     get_wallet_handler,
     get_wallet_balance_summary_handler
 )
